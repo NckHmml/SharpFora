@@ -1,0 +1,14 @@
+﻿{
+  "version": "1.0.0-*",
+  "authors": [ "NckHmml" ],
+
+  "dependencies": {
+    "Microsoft.AspNet.WebSockets.Server": "1.0.0-rc1-final",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": { }
+  }
+}

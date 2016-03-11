@@ -1,0 +1,15 @@
+﻿<script type="text/ng-template" id="Components/Register">
+    <div ng-switch="$ctrl.step">
+        <div ng-switch-when="1">
+            Step 1
+            <button ng-click="$ctrl.setStep(2)">Next</button>
+        </div>
+        <div ng-switch-when="2">
+            Step 2
+            <button ng-click="$ctrl.setStep(3)">Next</button>
+        </div>
+        <div ng-switch-when="3">
+            Step 3
+        </div>
+    </div>
+</script>

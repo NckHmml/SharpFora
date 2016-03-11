@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0-*",
+  "authors": [ "NckHmml" ],
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "EntityFramework.Commands": "7.0.0-rc1-final",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+    "Microsoft.AspNet.Diagnostics": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Identity": "3.0.0-rc1-final",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
+    "Microsoft.Framework.Caching.Memory": "1.0.0-beta8"
+  },
+
+  "commands": {
+    "ef": "EntityFramework.Commands",
+    "web": "Microsoft.AspNet.Server.Kestrel"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "SharpFora.DAL": "1.0.0-*",
+        "SharpFora.WebSockets": "1.0.0-*"
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+        "SharpFora.DAL": "1.0.0-*",
+        "SharpFora.WebSockets": "1.0.0-*"
+      }
+    }
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc",
+    "Scripts"
+  ]
+}

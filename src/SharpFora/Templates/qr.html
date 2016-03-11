@@ -1,0 +1,12 @@
+﻿<script type="text/ng-template" id="Components/QR">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         style="width:150px;height:150px"
+         viewBox="0 0 {{$ctrl.data.count}} {{$ctrl.data.count}}"
+         shape-rendering="crispEdges">
+
+        <rect height="100%" width="100%" fill="#fff" />
+        <rect height="1" width="1" fill="#000" id="pixel" />
+        <use ng-repeat="p in $ctrl.data.elements" x="{{p.x | number}}" y="{{p.y | number}}" xlink:href="#pixel" />
+    </svg>
+</script>
